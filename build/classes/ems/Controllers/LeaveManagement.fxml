@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="746.0" style="-fx-background-color: blue;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apm.FXMLAddUserController">
+    <stylesheets>
+        <URL value="@fxmladduser.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="17.0" layoutY="58.0" text="Leave Reason">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="leaveReason" layoutX="119.0" layoutY="53.0" onAction="#LeaveReasonAction" />
+      <TextField fx:id="leaveStart" layoutX="119.0" layoutY="98.0" onAction="#LeaveStartAction" />
+      <Label layoutX="26.0" layoutY="100.0" text="Leave Start">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="leaveEnd" layoutX="119.0" layoutY="140.0" onAction="#LeaveEndAction" />
+      <Label layoutX="35.0" layoutY="145.0" text="Leave End">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="back" layoutX="41.0" layoutY="362.0" mnemonicParsing="false" onAction="#backAction" prefHeight="25.0" prefWidth="226.0" text="Back" />
+      <Button fx:id="saveuser" layoutX="41.0" layoutY="328.0" mnemonicParsing="false" onAction="#saveuserAction" prefHeight="25.0" prefWidth="226.0" text="Save" />
+      <TableView fx:id="table" layoutX="326.0" prefHeight="548.0" prefWidth="460.0">
+        <columns>
+          <TableColumn fx:id="namcCol" prefWidth="213.0" text="Leave Reason" />
+          <TableColumn fx:id="usernameCol" prefWidth="139.0" text="Leave Start" />
+            <TableColumn fx:id="phoneCol" prefWidth="107.0" text="Leave End" />
+        </columns>
+      </TableView>
+      <Label fx:id="success" layoutX="37.0" layoutY="432.0" textFill="#00cd44" />
+      <Label fx:id="faild" layoutX="33.0" layoutY="30.0" textFill="#ff0037" />
+   </children>
+</AnchorPane>

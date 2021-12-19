@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="319.0" fitWidth="446.0" layoutX="1.0" layoutY="80.0">
+         <image>
+            <Image url="@../Images/6-Ways-to-Cut-Down-Costs-Save-Time-for-Employee-Management.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="42.0" layoutY="14.0" prefHeight="46.0" prefWidth="401.0" text="Employee Management" textFill="#0a0e8f">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <effect>
+            <Shadow height="0.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.0899122804403305" green="0.021929824724793434" blue="0.15789473056793213" />
+               </color>
+            </Shadow>
+         </effect>
+      </Label>
+      <Line endX="418.0" endY="-6.0" layoutX="93.0" layoutY="79.0" startX="-60.5" startY="-6.0" strokeWidth="5.0" />
+      <Button fx:id="emp_add" layoutX="443.0" layoutY="105.0" mnemonicParsing="false" onAction="#addEmpAction" prefHeight="46.0" prefWidth="121.0" text="ADD">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.13" contrast="1.0" hue="-0.87" saturation="1.0" />
+         </effect>
+      </Button>
+      <Button fx:id="emp_delete" layoutX="443.0" layoutY="168.0" mnemonicParsing="false" onAction="#deleteEmpAction" prefHeight="46.0" prefWidth="121.0" text="DELETE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.13" contrast="1.0" hue="-0.87" saturation="1.0" />
+         </effect>
+      </Button>
+      <Button fx:id="emp_update" layoutX="443.0" layoutY="227.0" mnemonicParsing="false" onAction="#updateEmpAction" prefHeight="46.0" prefWidth="121.0" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.13" contrast="1.0" hue="-0.87" saturation="1.0" />
+         </effect>
+      </Button>
+      <Button fx:id="emp_view_List" layoutX="443.0" layoutY="281.0" mnemonicParsing="false" onAction="#viewEmpListAction" prefHeight="50.0" prefWidth="121.0" text="VIEW">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.13" contrast="1.0" hue="-0.87" saturation="1.0" />
+         </effect>
+      </Button>
+      <Button layoutX="473.0" layoutY="347.0" mnemonicParsing="false" onAction="#HandleBackButtonAction" text="Back">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.38" contrast="-0.09" hue="1.0" saturation="-0.8" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

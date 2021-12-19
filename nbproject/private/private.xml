@@ -3,8 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/class/practicum/EMS/src/ems/Controllers/EMS.java</file>
-            <file>file:/F:/class/practicum/EMS/src/ems/Controllers/LoginController.java</file>
+            <file>file:/F:/class/practicum/EMS/src/ems/Controllers/AdminPanelController.java</file>
+            <file>file:/F:/class/practicum/EMS/src/ems/util/dbconnection.java</file>
         </group>
     </open-files>
 </project-private>

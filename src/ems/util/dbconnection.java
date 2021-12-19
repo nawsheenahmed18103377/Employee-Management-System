@@ -1,4 +1,4 @@
-package util;
+package ems.util;
 
 import java.sql.*;
 
@@ -9,7 +9,7 @@ public  static Connection getConnection() throws SQLException {
     Connection conn=null;    
     
     try{
-        conn =  DriverManager.getConnection("jdbc:mysql://localhost/apmdb","root","");
+        conn =  DriverManager.getConnection("jdbc:mysql://localhost/employeemanagement","root","");
 
         if(conn != null){
             System.out.println("Connected Successfully");
